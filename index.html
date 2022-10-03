@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo"><img src="img/logo.png" alt="" style="width: 160px;"></a>
+				<div class="header__menu">
+					<nav>
+						<ul class="menu">
+							<li><a href="" class="menu-item">Home</a></li>
+							<li><a href="" class="menu-item">Blog</a></li>
+							<li><a href="" class="menu-item">Store</a></li>
+							<li><a href="" class="menu-item">Contact us</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__folow">
+					<p class="titl">Folow us</p>
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-tumblr"></a>
+					<a href="#" class="fa fa-instagram"></a>
+					<a href="#" class="fa fa-twitter"></a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="about__container">
+				<div class="about__content">
+					<div class="title">HORROR<br> HALLOWEEN<br> PARTY</div>
+					<div class="decor2">
+						<img src="img/arka.png" alt="" style="width:100%">
+					</div>
+					<div class="about__swiper swiper">
+						<div class="about__wrapper swiper-wrapper">
+							<div class="about__slider swiper-slide">
+								<img src="img/layers.png" alt="" style="width: 80%">
+							</div>
+							<div class="about__slider swiper-slide">
+								<img src="img/print.png" alt="" >
+							</div>
+						</div>
+					</div>
+					<div class="about__arrows">
+						<div class="about__arrow-next swiper-button-next"></div>
+						<div class="about__arrow-prev  swiper-button-prev"></div>
+					</div>
+
+					<div class="about__col">
+						<div class="text">
+							<h2>Reserve your place</h2>
+							<p>Lorem ipsum dolor sit ameteus,<br>
+								elit, sed do eiusmod temporis</p>
+						</div>
+						<div class="text">
+							<h2>See you on the 31st</h2>
+							<p>Lorem ipsum dolor sit amet,<br>
+								elit, sed do eiusmod tempo</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</main>
+	</div>
+	<script src="js/main.js"></script>
+	<script type="module">
+		import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+		const swiper = new Swiper('.about__swiper', {
+			loop: true,
+			navigation: {
+				nextEl: '.about__arrow-next.swiper-button-next',
+				prevEl: '.about__arrow-prev.swiper-button-prev',
+			},
+		});
+	</script>
+</body>
+
+</html>
